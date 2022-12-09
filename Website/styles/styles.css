@@ -1,0 +1,146 @@
+:root {
+    --rich-black-fogra-29: #0d1b2aff;
+    --oxford-blue: #1b263bff;
+    --bdazzled-blue: #415a77ff;
+    --shadow-blue: #778da9ff;
+    --platinum: #e0e1ddff;
+}
+
+.main-header {
+    background-color: var(--oxford-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.logo {
+    width: 100px;
+    margin: 0.5em;
+    display: block;
+}
+
+.search input {
+    padding: 0.5em;
+    flex: 1;
+}
+
+.search button {
+    padding: .5em;
+    background-color: rgb(255, 255, 255);
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    min-width: 20ch;
+}
+
+.main-footer {
+    background-color: var(--bdazzled-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin: 30px 20px;
+}
+
+
+.main-navigation a,
+.footer-navigation a,
+.user-nav a,
+.social-nav  {
+    color: var(--platinum);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+/*------------ home page*/
+.home-banner {
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    place-items: center center;
+    min-width: 100%;
+}
+
+.home-banner h2 {
+    color: var(--platinum);
+    font-size: 2em;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+    padding: .4em;
+    background-color: rgba(24, 26, 155, 0.6);
+}
+
+.slide1 {
+    background-image: url("/images/latest_arrivals/daniel-storek-JM-qKEd1GMI-unsplash.jpg");
+}
+
+.slide2 {
+    background-image: url("/images/latest_arrivals/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg")
+}
+
+.slide3 {
+    background-image: url("/images/latest_arrivals/andres-jasso-PqbL_mxmaUE-unsplash.jpg");
+}
+.contact-form {
+    max-width: 30em;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5em;
+}
+.contact-form input .contact-form textarea{
+    line-height: 2.5em;
+    padding: 0 0.5em;
+}
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+button[ type="reset" ] {
+    background-color: var(--rich-black-fogra-29);
+    color: var(--platinum)
+}
+a:hover {
+    background-color: yellow;
+  }
